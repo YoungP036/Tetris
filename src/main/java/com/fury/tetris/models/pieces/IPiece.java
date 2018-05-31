@@ -1,10 +1,16 @@
 package com.fury.tetris.models.pieces;
 
-public class IPiece extends Piece{
+import java.awt.Color;
 
-    public IPiece() {
-        super();
-        // populate grids for IPiece
+public class IPiece extends Piece {
+
+    public IPiece(int boardRows, int boardCols) {
+        super(boardRows, boardCols);
+        this.pieceGrid[0][0].setColor(Color.CYAN);
+        this.pieceGrid[0][1].setColor(Color.CYAN);
+        this.pieceGrid[0][2].setColor(Color.CYAN);
+        this.pieceGrid[0][3].setColor(Color.CYAN);
+        this.setName("I");
+        this.setColor(Color.CYAN);
     }
-
 }
